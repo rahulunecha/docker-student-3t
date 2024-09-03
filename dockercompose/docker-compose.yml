@@ -1,0 +1,26 @@
+
+services:          #default synxtax
+  database1:        #naming convention for container
+    build: /opt/docker-student-3t/Mysql/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '3306:3306'  
+    container_name: contfirst  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+
+ backend1:        #naming convention for container
+    build: /opt/docker-student-3t/backend/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '8080:8080'  
+    container_name: contfirst  #providing name to container
+    network_mode:   #providing network mode
+        bridge
+
+ frontend11:        #naming convention for container
+    build: /opt/docker-student-3t/frontend/ #location of the docker file
+    ports:     #port mapping my container to host port 
+      - '88:80'  
+    container_name: contfirst  #providing name to container
+    network_mode:   #providing network mode
+        bridge
