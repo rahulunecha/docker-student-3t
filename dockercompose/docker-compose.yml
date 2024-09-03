@@ -1,4 +1,3 @@
-
 services:          #default synxtax
   database1:        #naming convention for container
     build: /opt/docker-student-3t/Mysql/ #location of the docker file
