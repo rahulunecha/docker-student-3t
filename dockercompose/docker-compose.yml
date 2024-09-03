@@ -6,17 +6,14 @@ services:          #default synxtax
     container_name: contfirst  #providing name to container
     network_mode:   #providing network mode
         bridge
-
-
- backend1:        #naming convention for container
+  backend1:        #naming convention for container
     build: /opt/docker-student-3t/backend/ #location of the docker file
     ports:     #port mapping my container to host port 
       - '8080:8080'  
     container_name: contfirst  #providing name to container
     network_mode:   #providing network mode
         bridge
-
- frontend11:        #naming convention for container
+  frontend11:        #naming convention for container
     build: /opt/docker-student-3t/frontend/ #location of the docker file
     ports:     #port mapping my container to host port 
       - '88:80'  
